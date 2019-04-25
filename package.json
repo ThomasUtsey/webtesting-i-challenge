@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "jest-cli": "^24.7.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "enhancing/*.js"
+    ]
+  },
+  "scripts": {
+    "testall": "jest --watchAll",
+    "cover": "jest --coverage"
+  },
+  "name": "webtesting-i-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ThomasUtsey/webtesting-i-challenge.git",
+  "author": "thomasutsey <tomutsey@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}
