@@ -46,6 +46,14 @@ describe('enhancer.js',() =>{
   test('refresh durability to 100',()=> expect(repair({ durability: 40}).durability).toBe(100))
 
   describe('get()',()=>{
-
+    it('add enhancement level to name of item',()=>{
+   
+      expect (get({
+        name:'axe',
+        enhancement:15
+      })).toEqual({
+        name:'[+15] axe'
+      })
+      })
   })
 })

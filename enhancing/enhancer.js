@@ -40,5 +40,9 @@ function repair(item) {
 }
 
 function get(item) {
-  return { ...item };
+  if (item.enhancement > 0){
+    return ({name:`[+${item.enhancement}] ${item.name}`})
+  }else{
+    return item.name;
+  }
 }
