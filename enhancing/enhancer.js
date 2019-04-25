@@ -5,8 +5,12 @@ module.exports = {
   get,
 };
 
-function succeed(item) {
-  return { ...item };
+function succeed(enhancement) {
+ if(enhancement == 20){
+   return 20
+ }else{
+   return enhancement + 1
+ } 
 }
 
 function fail(item) {
